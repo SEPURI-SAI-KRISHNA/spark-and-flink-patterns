@@ -11,3 +11,4 @@ Consider a classic "Ad Tech" use case: Join Impressions (View) with Clicks.
 - __The Reality__: 99% of users never click the ad.
 
 - __Result__: The "Impression" data sits in your state backend (RocksDB/Memory) forever, waiting for a click that will never come. Over weeks, your state grows to terabytes, checkpoints become massive, recovery takes hours, and eventually, the job crashes due to storage limits. This is "Zombie State."
+  
